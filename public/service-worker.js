@@ -1,8 +1,11 @@
-const CACHE_NAME = "cristal-pwa-v1";
+const CACHE_NAME = "cristal-pwa-v2";
 const FILES_TO_CACHE = [
   "/index.html",
   "/manifest.json",
-  "/icons/LOGO.png"
+  "/icons/LOGO.png",
+  "/assets/index-XLp1xGiV.css",
+  "/assets/index-CJMDcwLB.js",
+  "/assets/LOGO-BcHP9gct.png"
 ];
 
 self.addEventListener("install", (event) => {
@@ -34,6 +37,7 @@ self.addEventListener("fetch", (event) => {
         if (event.request.mode === "navigate") {
           return caches.match("/index.html");
         }
+        return new Response("", { status: 404, statusText: "Offline" });
       })
   );
 });

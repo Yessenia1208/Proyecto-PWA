@@ -4,8 +4,7 @@ const FILES_TO_CACHE = [
   "/manifest.json",
   "/icons/LOGO.png",
   "/assets/index-XLp1xGiV.css",
-  "/assets/index-CJMDcwLB.js",
-  "/assets/LOGO-BcHP9gct.png"
+  "/assets/index-CJMDcwLB.js"
 ];
 
 self.addEventListener("install", (event) => {

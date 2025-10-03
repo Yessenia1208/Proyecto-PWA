@@ -1,0 +1,38 @@
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.splash-logo {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+
+.loader {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #9be0fd; 
+  border-top: 5px solid #0370c2; 
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}

@@ -1,10 +1,11 @@
-const CACHE_NAME = "cristal-pwa-v3";
+const CACHE_NAME = "cristal-pwa-v2";
 const FILES_TO_CACHE = [
   "/index.html",
   "/manifest.json",
   "/icons/LOGO.png",
-  "/icons/icon_x192.png",
-  "/icons/icon_x512.png"
+  "/assets/index-XLp1xGiV.css",
+  "/assets/index-CJMDcwLB.js",
+  "/assets/LOGO-BcHP9gct.png"
 ];
 
 self.addEventListener("install", (event) => {
